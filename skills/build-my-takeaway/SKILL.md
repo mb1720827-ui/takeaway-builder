@@ -91,7 +91,7 @@ npm run worker -- --once   # processes anything queued, then stops
 Share one short video from the phone, run the command above and watch the log. "Ready in …s: <title> → <collection>" means it worked. Then open the dashboard and Review mode with them.
 
 To keep it running, use `npm run worker`. To start it automatically:
-- **Windows:** Task Scheduler › Create Basic Task › "When I log on" › program `cmd`, arguments `/c cd /d C:\path\to\my-takeaway && npm run worker`.
+- **Windows:** run `powershell -ExecutionPolicy Bypass -File worker\install-autostart.ps1` once. It creates a hidden Task Scheduler task that starts at login, restarts the worker if it stops and logs to `worker.log`. Before starting the task (`Start-ScheduledTask -TaskName "Takeaway worker"`), stop any worker already running in a terminal.
 - **macOS/Linux:** a crontab line `@reboot cd /path/to/my-takeaway && npm run worker >> worker.log 2>&1`, or a launchd/systemd service.
 
 ## Troubleshooting
