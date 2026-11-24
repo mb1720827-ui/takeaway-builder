@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "takeaway-builder",
+  "description": "Build your own save-to-learn inbox with one prompt.",
+  "owner": { "name": "Ogundipe Peter Temiloluwa", "url": "https://github.com/mb1720827-ui" },
+  "plugins": [
+    {
+      "name": "takeaway-builder",
+      "description": "Step-by-step guide your agent follows to build, customise and deploy your own Takeaway.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

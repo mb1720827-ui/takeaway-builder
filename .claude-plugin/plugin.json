@@ -1,0 +1,10 @@
+{
+  "name": "takeaway-builder",
+  "description": "Builds and deploys your own Takeaway: share videos and links from your phone, and an AI turns them into notes, collections and a review queue.",
+  "version": "0.1.0",
+  "author": { "name": "Ogundipe Peter Temiloluwa", "url": "https://github.com/mb1720827-ui" },
+  "homepage": "https://github.com/mb1720827-ui/takeaway-builder",
+  "repository": "https://github.com/mb1720827-ui/takeaway-builder",
+  "license": "MIT",
+  "keywords": ["learning", "notes", "tiktok", "youtube", "second-brain", "share-sheet", "claude-code"]
+}
