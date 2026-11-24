@@ -48,7 +48,7 @@ If they want their own GitHub repository, create one (`gh repo create my-takeawa
 ## Step 4: Database (Supabase)
 
 1. Ask them to create a free project at supabase.com, or pick an existing one. Note that the free plan allows 2 active projects.
-2. Run `supabase/migrations/20261124100000_takeaway.sql`. Either they paste it into the Supabase SQL Editor, or you run `npx supabase db query --remote=<project-ref> --file supabase/migrations/20261124100000_takeaway.sql` after `npx supabase login`.
+2. Run every file in `supabase/migrations/`, oldest first. Either they paste each into the Supabase SQL Editor, or you run `npx supabase db query --remote=<project-ref> --file <file>` for each after `npx supabase login`.
 3. Ask them for the **project URL** and the **publishable (or anon) key**: Project Settings › API. **Never ask for or use the secret/service-role key.** Nothing here needs it.
 4. Create `.env.local` from `.env.example` and fill in `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
 
