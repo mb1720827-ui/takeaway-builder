@@ -100,7 +100,7 @@ To keep it running, use `npm run worker`. To start it automatically:
 |---|---|
 | "Claude Code isn't installed" | Install it, or set `CLAUDE_BIN` to its full path in `.env.local`. |
 | A TikTok or YouTube link fails to download | Update yt-dlp (`yt-dlp -U`, or `winget upgrade yt-dlp.yt-dlp`). Platforms change often. |
-| Instagram links fail | Instagram often blocks downloads without a login. This isn't supported yet. |
+| Instagram links fail | Public Reels work. Private or login-only posts need a logged-in session, which isn't supported yet. |
 | Phone gets 401 | Wrong or old token. Create a new one in Settings and update the shortcut. |
 | Items stay "queued" | The worker isn't running, or `.env.local` has the wrong email or password. |
 | Notes feel too long or too technical | Edit `worker/prompt.md`, then retry an item from the dashboard. |
